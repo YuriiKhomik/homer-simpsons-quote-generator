@@ -1,3 +1,20 @@
 $primary-blue-color: #70D1FE;
 $primary-yellow-color: #FED90F;
 $primary-black-color: #424F46;
+$primary-white-color: #ffffff;
+
+
+$mobile: 479.8px;
+$tablet: 767.8px;
+$desktop: 1279.8px;
+
+
+@mixin fSize($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+// .test {
+//     @include fSize(500 , 24px, 1.6,)
+// }
