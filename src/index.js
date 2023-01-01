@@ -1,7 +1,7 @@
 import { quotes } from './js/quotes';
 
 const nextBtn = document.querySelector('.js-next-btn');
-const quoteOriginal = document.querySelector('.quote__original-text');
+const quoteOriginal = document.querySelector('.quote__text');
 const quoteTranslated = document.querySelector('.quote__translated-text');
 
 nextBtn.addEventListener('click', generateQuote);
