@@ -1,5 +1,20 @@
 .container{
     padding: 15px;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+
+    @media screen and (max-width: $desktop) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .hero {
@@ -58,13 +73,6 @@
     @include fSize(400, 20px, 1.4)
 }
 
-.quote__img{
-    // position: absolute;
-    top: 110px;
-    left: 70%;
-    z-index: 1;
-}
-
 .button-container{
     display: flex;
     justify-content: center;
@@ -77,15 +85,18 @@
     border-radius: 15px;
     box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    color: #ffffff;
     background-color: $primary-blue-color;
+    cursor: pointer;
 
     text-shadow: -1px 1px 1px $primary-black-color,
             1px 1px 1px $primary-black-color,
             1px -1px 0 $primary-black-color,
             -1px -1px 0 $primary-black-color;
-}
-.quote__next-btn:active{
-    background-color: #FF81C1;
-    color: $primary-yellow-color;
+
+        &:hover,
+        &:focus{
+            background-color: $primary-pink-color;
+            color: $primary-yellow-color;
+        }
 }
 
 
