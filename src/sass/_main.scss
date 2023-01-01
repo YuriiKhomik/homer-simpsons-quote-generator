@@ -1,12 +1,11 @@
-// .container{
-//     align-content: center;
-// }
+.container{
+    padding: 15px;
+}
 
 .hero {
     width: 100%;
-    height: 130px;
-    // opacity: 0.5;
-    background-color: $primary-white-color;
+    height: 160px;
+    background-color: $primary-blue-color;
     border-radius: 50px;
     border: 5px solid $primary-black-color;
 
@@ -15,30 +14,39 @@
     align-items: center;
     text-align: center;
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .title {
     margin-top: 0;
     margin-bottom: 0;
 
-    @include fSize(400, 35px, 1.4)
+    color: #ffffff;
+        text-shadow: -1px 1px 2px $primary-black-color,
+                1px 1px 2px $primary-black-color,
+                1px -1px 0 $primary-black-color,
+                -1px -1px 0 $primary-black-color;
+    @include fSize(400, 33px, 1.4)
 }
 
 .quote{
     overflow-y: scroll;
     width: 100%;
-    height: 350px;
+    height: 250px;
     background-color: $primary-white-color;
     border-radius: 10%;
     border: 5px solid $primary-black-color;
 
     padding: 20px;
     margin-bottom: 50px;
+    text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .quote__original-text{
-    @include fSize(400, 20px, 1.4);
+    @include fSize(400, 23px, 1.4);
 
     margin-bottom: 30px
 }
