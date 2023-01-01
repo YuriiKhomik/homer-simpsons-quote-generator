@@ -6,7 +6,7 @@
     width: 100%;
     height: 160px;
     background-color: $primary-blue-color;
-    border-radius: 50px;
+    border-radius: 40px;
     border: 5px solid $primary-black-color;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
@@ -15,7 +15,7 @@
     align-items: center;
     text-align: center;
     padding: 15px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .title {
@@ -23,44 +23,35 @@
     margin-bottom: 0;
 
     color: #ffffff;
-        text-shadow: -1px 1px 2px $primary-black-color,
+    text-shadow: -1px 1px 2px $primary-black-color,
                 1px 1px 2px $primary-black-color,
                 1px -1px 0 $primary-black-color,
                 -1px -1px 0 $primary-black-color;
-    @include fSize(400, 33px, 1.4)
+    @include fSize(400, 30px, 1.4)
 }
 
 .quote{
-    position: relative;
-    
+    overflow-y: scroll;
     box-sizing: border-box;
     width: 100%;
-    height: 250px;
+    height: 210px;
     background-color: $primary-white-color;
-    border-radius: 10%;
+    border-radius: 40px;
     border: 5px solid $primary-black-color;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
-    padding: 20px;
-    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-}
-
-.quote-text-container{
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    z-index: 2;
+    padding: 20px;
+    margin-bottom: 40px;
 }
 
 .quote__text{
     @include fSize(400, 23px, 1.4);
-
-    z-index: 3;
-    margin-bottom: 30px
+    // margin-bottom: 30px
+    max-height: 100%;
 }
 
 .quote__translated-text{
@@ -68,7 +59,7 @@
 }
 
 .quote__img{
-    position: absolute;
+    // position: absolute;
     top: 110px;
     left: 70%;
     z-index: 1;
@@ -85,6 +76,14 @@
     background-color: #ffffff;
     border: 4px solid $primary-black-color;
     border-radius: 15px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+
+        :hover, :focus, :active{
+            color: #ffffff;
+            background-color: $primary-blue-color;
+        }
 }
 
 

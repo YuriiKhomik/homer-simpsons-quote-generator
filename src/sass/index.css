@@ -56,7 +56,7 @@ body {
   width: 100%;
   height: 160px;
   background-color: #70D1FE;
-  border-radius: 50px;
+  border-radius: 40px;
   border: 5px solid #424F46;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   display: flex;
@@ -64,7 +64,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .title {
@@ -73,37 +73,32 @@ body {
   color: #ffffff;
   text-shadow: -1px 1px 2px #424F46, 1px 1px 2px #424F46, 1px -1px 0 #424F46, -1px -1px 0 #424F46;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 30px;
   line-height: 1.4;
 }
 
 .quote {
-  position: relative;
+  overflow-y: scroll;
   box-sizing: border-box;
   width: 100%;
-  height: 250px;
+  height: 210px;
   background-color: #ffffff;
-  border-radius: 10%;
+  border-radius: 40px;
   border: 5px solid #424F46;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  padding: 20px;
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
-
-.quote-text-container {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  z-index: 2;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .quote__text {
   font-weight: 400;
   font-size: 23px;
   line-height: 1.4;
-  z-index: 3;
-  margin-bottom: 30px;
+  max-height: 100%;
 }
 
 .quote__translated-text {
@@ -113,7 +108,6 @@ body {
 }
 
 .quote__img {
-  position: absolute;
   top: 110px;
   left: 70%;
   z-index: 1;
@@ -130,6 +124,11 @@ body {
   background-color: #ffffff;
   border: 4px solid #424F46;
   border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.quote__next-btn :hover, .quote__next-btn :focus, .quote__next-btn :active {
+  color: #ffffff;
+  background-color: #70D1FE;
 }
 
 .header {
@@ -137,7 +136,7 @@ body {
   height: 40px;
   background-color: #424F46;
   opacity: 0.3;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -148,7 +147,7 @@ body {
   width: 100%;
   height: 160px;
   background-color: #70D1FE;
-  border-radius: 50px;
+  border-radius: 40px;
   border: 5px solid #424F46;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   display: flex;
@@ -156,7 +155,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 15px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .title {
@@ -165,37 +164,32 @@ body {
   color: #ffffff;
   text-shadow: -1px 1px 2px #424F46, 1px 1px 2px #424F46, 1px -1px 0 #424F46, -1px -1px 0 #424F46;
   font-weight: 400;
-  font-size: 33px;
+  font-size: 30px;
   line-height: 1.4;
 }
 
 .quote {
-  position: relative;
+  overflow-y: scroll;
   box-sizing: border-box;
   width: 100%;
-  height: 250px;
+  height: 210px;
   background-color: #ffffff;
-  border-radius: 10%;
+  border-radius: 40px;
   border: 5px solid #424F46;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  padding: 20px;
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-}
-
-.quote-text-container {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  z-index: 2;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .quote__text {
   font-weight: 400;
   font-size: 23px;
   line-height: 1.4;
-  z-index: 3;
-  margin-bottom: 30px;
+  max-height: 100%;
 }
 
 .quote__translated-text {
@@ -205,7 +199,6 @@ body {
 }
 
 .quote__img {
-  position: absolute;
   top: 110px;
   left: 70%;
   z-index: 1;
@@ -222,4 +215,9 @@ body {
   background-color: #ffffff;
   border: 4px solid #424F46;
   border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.quote__next-btn :hover, .quote__next-btn :focus, .quote__next-btn :active {
+  color: #ffffff;
+  background-color: #70D1FE;
 }/*# sourceMappingURL=index.css.map */
